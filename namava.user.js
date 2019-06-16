@@ -17,7 +17,7 @@ window.onload = function () {
   {
       if (anchors[i].innerHTML.includes(searchstring))
       { 
-          var movieId     = anchors[i].href.replace (/\D+(\d+)$/, '$1')
+          var movieId     = anchors[i].onclick.toString().replace (/\D+(\d+)\D+/, '$1')
           var tvip        = '192.168.1.1'
           
           var foo2 = document.createTextNode(' ');
